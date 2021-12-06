@@ -100,6 +100,13 @@
 //         return { dispose: () => {} };
 //       });
 
+//     serialServiceClient
+//       .setup((mock) => mock.onWebSocketChanged(It.isAny()))
+//       .returns((h) => {
+//         handleWebSocketChanged = h;
+//         return { dispose: () => {} };
+//       });
+
 //     serialService
 //       .setup((m) => m.disconnect())
 //       .returns(() => Promise.resolve(Status.OK));
